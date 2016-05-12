@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20160512000241) do
     t.integer "follower_user_id"
   end
 
-  add_index "relationships", ["follower_user_id", "user_id"], name: "index_relationships_on_follower_user_id_and_user_id", unique: true
   add_index "relationships", ["user_id", "follower_user_id"], name: "index_relationships_on_user_id_and_follower_user_id", unique: true
 
   create_table "users", force: :cascade do |t|
