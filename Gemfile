@@ -39,6 +39,7 @@ group :development, :test do
   gem 'byebug'
   gem 'hirb'
   gem 'pry-rails'
+  gem "rails-erd"
 end
 
 group :development do
